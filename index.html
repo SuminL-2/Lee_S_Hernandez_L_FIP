@@ -16,31 +16,26 @@
    <header class="grid-con" id="main-header">
       <h2 class="hidden">Main Header</h2>
 
-      <div class="box-1 col-span-full full-width-grid-con xl-col-span-full" id="main-nav">
+      <nav class="full-width-grid-con" id="main-nav">
          <h3 class="hidden">Main Navigation</h3>
-         <div class="box-2 col-span-4 m-col-start-11 m-col-end-13" id="burger-con">
-               <!-- burger navigation -->
-               <!-- <section class="navWrap">
-                     <div class="logo"><img src="images/logo.svg" alt="logo" class="logo"></div>
-                              <input type="checkbox" id="navToggle" class="navToggle">
-                              <label for="navToggle" class="navToggleLabel"><span></span></label>
-                              <nav>
-                              <ul>
-                              <li><a href="#home">Home</a></li>
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Product</a></li>
-                              <li><a href="#">Contact Us</a></li>
-                              <li><a href="#" class="btn">Search</a></li>
-                              </ul>
-                              </nav>
-                        </section> -->
+         <button id="button"></button>
+         <div class="col-span-4 m-col-start-11 m-col-end-13" id="burger-con">
+               <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="story.html">OUR STORY</a></li>
+                  <li><a href="#">PRODUCT</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">SEARCH</a></li>
+                  <li><a href="#" class="btn">STORE</a></li>
+               </ul>
          </div>
-      </div>
-      <div class="box-2 col-start-1 col-end-3 col-span-full m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8" id="main-logo">
+      </nav>
+
+      <div class="col-start-1 col-end-3 col-span-full m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8" id="main-logo">
          <h3 class="hidden">Logo</h3>
+         <a href="index.html"><img src="images/BillyBeerLogo.svg" alt="Billy Beer main logo"></a>
       </div>
 
-            
    </header>
 
    <main>
@@ -72,11 +67,18 @@
       <section class="grid-con" id="product-con">
          <h2 class="hidden">Product contents</h2>
          
-         <div class="box-3 col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="product-text"></div>
+         <div class="box-3 col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="product-text">
+         </div>
 
-         <div class="product box-1 col-start-1" id="product-1"></div>
-         <div class="product box-1 col-start-4" id="product-2"></div>
-         <div class="product box-1" id="product-3"></div>
+         <div class="product box-1 col-start-1" id="product-1">
+            <img src="images/5-prod.png" alt="beer-1">
+         </div>
+         <div class="product box-1 col-start-4" id="product-2">
+            <img src="images/6-prod.png" alt="beer-2">
+         </div>
+         <div class="product box-1" id="product-3">
+            <img src="images/7-prod.png" alt="beer-3">
+         </div>
       </section>
 
       <section class="grid-con" id="promo">
@@ -112,20 +114,40 @@
 
 
 
-   <footer class="grid-con col-span-full m-col-span-full full-width-grid-con xl-col-span-full">
+   <footer class="grid-con col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="footer-con">
 
       <h2 class="hidden">Main footer section</h2>
 
-      <div class="box-3 col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="footer-logo"></div>
-      <div class="box-3 col-start-2 col-end-4 m-col-start-8 m-col-end-12 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="info"></div>
-      <div class="box-3 col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="icons"></div>
+      <div class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="footer-logo">
+         <img src="images/BillyBeerLogo.svg" alt="Billy Beer Logo">
+      </div>
 
-      <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12" id="contact-form">
-            <div class="box-4 " id="cont-f-1"></div>
-            <div class="box-4 " id="cont-f-2"></div>
-            <div class="box-4 " id="cont-f-3"></div>
-            <div class="box-4 cont-f-4"></div>
-            <div class="box-4 col-start-3" id="submit-button"></div>
+      <div class="col-span-full m-col-start-8 m-col-end-12 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="info-con">
+         <h3>Billy Beer Corporation</h3>
+                              <span>3032 Adamsville Road</span>
+
+                              <span>
+                              Victoria, Texas – 77901
+                              </span>
+                              <span>contactus@billybeercorp.com
+                              </span>      
+                              <span>361-550-1795</span> 
+      </div>
+      <div class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5" id="sm-icons">
+         <img src="images/icon-Insta.png" alt="insta icon">
+         <img src="images/icon-linkedin.png" alt="linkedin icon">
+         <img src="images/icon-twitter.png" alt="twitter icon">
+      </div>
+
+      <div class="col-start-2 m-col-start-3 m-col-end-11 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12" id="contact-form">
+         <input id="Name_footer" name="Name" 
+         type="text" placeholder="  Name*">
+         <input id="phone_footer" type="tel" name="Telephone" placeholder="  Telephone*">
+         <input id="email_footer" name="email" type="email" placeholder="  Email*">
+         <input name="message" type="text" id="message_footer" placeholder="  Message*">
+         <button id="send_footer" name="send" type="submit" value="Send">
+               <span>Send</span>
+         </button>
       </div>
 
    </footer>  
