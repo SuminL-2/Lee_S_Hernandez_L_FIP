@@ -26,7 +26,6 @@
       url('fino_sans_bold_italic-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
-
 }
 
 
@@ -89,7 +88,8 @@ html {
 
 body {
    font-family: 'Fino Sans', Helvetica, sans-serif;
-   font-size: 20px;
+   font-size: 1.25rem;
+   color: #110F3D;
    background-color: #fff;
 }
 
@@ -108,24 +108,37 @@ body {
 
 .hidden {display: none;}
 
+.btn {
+   background-color: #fff;
+   border: none !important;
+   border-radius: 0.9375rem;
+   padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
+   font-family: 'Fino sans', Arial, Helvetica, sans-serif;
+   font-style: bold;
+   font-size: 1.125rem;
+}
 
-
+.btn:hover {
+   box-shadow: inset 0 -5rem 0 #110F3D;
+   color: #fff;
+   transition: all .6s ease-in-out;
+}
 
 /* 2. ---Main header Nav--- */
 
 html {
-   font-size: 120%;
+   font-size: 100%;
 }
 
 
 header {
    background-color: #ffffff;
-   height: 60px;
+   height: 3.75rem;
    position: sticky;
 }
 
 #main-nav{
-   height: 60px;
+   height: 3.75rem;
    position: absolute;
    z-index: 1;
 }
@@ -133,18 +146,19 @@ header {
 #main-logo{
    position: absolute;
    z-index: 2;
-   width: 100px;
-   height: 77px;
+   width: 6.25rem;
+   height: 4.8125rem;
    display: grid;
    grid-row: 2/3;
    justify-self: center;
 
-   margin-top: 20px;
+   margin-top: 1.25rem;
 }
 
 #main-logo:hover {
-   transform: scale(1.2);
-   transition: all 0.3s ease-out;
+   transform: scale(1.1);
+   transition: all 0.3s ease-in-out;
+   opacity: 85%;
 }
 
 
@@ -158,18 +172,16 @@ header {
    border: 0;
    grid-column: 3/4;
    margin: auto;
-   margin-right: 20px;
+   margin-right: 1.25rem;
 
-   height: 35px;
-   width: 35px;
+   height: 2.1875rem;
+   width: 2.1875rem;
 }
 
 
 #main-nav button.expanded {
    transform: rotate(90deg);
-
-   position: absolute;
-   z-index: 3;
+   z-index: 100;
 }
 
 #burger-con {
@@ -191,24 +203,25 @@ header {
 #main-nav ul {
    list-style: none;
    padding: 0;
-   margin: 150px 0 0 0;
+   margin: 9.375rem 0 0 0;
 }
 
 #main-nav ul li a {
    display: block;
    padding: 0.625rem 0 0.625rem 0;
 
-   margin-bottom: 20px;
-   margin-right: 30px;
+   margin-bottom: 1.25rem;
+   margin-right: 1.875rem;
    text-align: right;
    color: #ffffff;
-   font-size: 26px;
+   font-size: 1.625rem;
 
    text-decoration: none;
 }
 
 #main-nav ul li a:hover {
    color: #F7B92E;
+   transition: all .3s ease-in;
 }
 
 #main-nav ul li:last-child {
@@ -222,103 +235,183 @@ header {
 
 #hero-img1 {
    object-fit: cover;
-   height: 337px;
+   width: 20rem;
+   height: 21.0625rem;
    padding: 0;
    margin: 0;
-   margin-top: -30px;
 }
 
 #hero-img2 {
    object-fit: cover;
-   height: 337px;
+   width: 20rem;
+   height: 21.0625rem;
    padding: 0;
    margin: 0;
-   margin-top: -35px;
 }
 
 #hero-text {
-   height: 290px;
+   height: 14rem;
+   background-color: #F7B92E;
+   padding: 2.5rem;
+
+   display: flex;
+   justify-items: center;
+}
+
+#hero-text h4 {
+   font-size: 1.875rem;
+   text-align: center;
+
+   margin-top: 2.8rem;
 }
 
 /* 4. ---Video--- */
 
 #vid-playback {
-height: 370px;
+height: 23.125rem;
 padding: 0;
-margin: 50px 0 0 0;
+margin: 3.125rem 0 0 0;
 object-fit: cover;
 }
 
 #video-text {
-   height: 123px;
-   margin-top: 50px;
+   height: 7.6875rem;
+   margin-top: 3.125rem;
+   margin-bottom: 3.125rem;
+   padding: 1.5625rem;
+
+   text-align: center;
+   display: inline;
+   font-style: italic;
 }
 
 /* 5. ---About us--- */
 
 #about-rotation-img {
-height: 275px;
-margin-top: 60px;
+height: 17.1875rem;
+margin-top: 3.75rem;
 }
 
 #about-us-t-box {
-height: 200px;
-margin-top: 60px;
+height: 12.5rem;
+margin-top: 3.75rem;
+padding-top: 3.125rem;
+background-color: #F7B92E;
+
+text-align: center;
+display: inline-flex;
+flex-direction: column;
+align-items: center;
 }
+
+#about-us-t-box span {
+   font-style: italic;
+   margin-top: 1.25rem;
+}
+
+#about-us-t-box button {
+   width: 7.5rem;
+   margin-top: 1.25rem;
+}
+
+
 
 
 
 /* 6. ---Our story--- */
 
 #text-our-story {
-height: 200px;
+height: 12.5rem;
 }
 
 /* 7. ---Product content--- */
 
 
 #product-text {
-   height: 345px;
-   margin-top: 70px;
+   margin-top: 7rem;
+   margin-bottom: 5rem;
+   padding: 0 1.5625rem 0 1.5625rem;
+
+   text-align: center;
+   display: inline-flex;
+   flex-direction: column;
+
+   font-size: 1.875rem;
+}
+
+#product-text p {
+   display: inline-flex;
+   flex-direction: column;
+   font-weight: 550;
+}
+
+#product-text p span {
+   font-size: 1.5625rem;
+   margin-top: 1.25rem;
+   font-weight: 400;
 }
 
 .product {
-   height: 470px;
-   width: 240px;
+   height: 29.375rem;
+   width: 15rem;
 
-   margin-top: 70px;
+   margin-top: 4.375rem;
 
-   border-radius: 50px 50px 0 0;
+   border-radius: 3.125rem 3.125rem 0 0;
 }
 
 #product-2 {
-   margin-left: 20px;
+   margin-left: 1.25rem;
 }
 
 #product-3 {
    display: none;
 }
 
+/* * {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ .products {
+   background: #EEE;
+ }
+ 
+ .product {
+   width: 66%;
+   height: 12.5rem;
+   margin-right: 0.625rem;
+   background: #110F3D;
+ }
+ 
+ /* cell number */
+ .product:before {
+   display: block;
+   text-align: center;
+   line-height: 12.5rem;
+   font-size: 5rem;
+   color: white;
+ } */
 
 /* 8. ---Promo con--- */
 
 
 #promo {
    background-color: #242424;
-   height: 945px;
+   height: 59.0625rem;
 
-   margin-top: 60px;
+   margin-top: 3.75rem;
 } 
 
 #promo-text {
-   margin-top: 55px;
-   height: 285px;
+   margin-top: 3.4375rem;
+   height: 17.8125rem;
 }
 
 .promo-n {
-   width: 115px;
-   height: 90px;
-   margin: 35px;
+   width: 7.1875rem;
+   height: 5.625rem;
+   margin: 2.1875rem;
 }
 
 #promo-number {
@@ -330,21 +423,21 @@ height: 200px;
 /* 9. ---Closing--- */
 
 #closing {
-   margin-bottom: 75px;
+   margin-bottom: 4.6875rem;
 }
 #banner-t {
-   height: 60px;
-   margin-top: 50px;
-   margin-bottom: 50px;
+   height: 3.75rem;
+   margin-top: 3.125rem;
+   margin-bottom: 3.125rem;
 }
 
 .closing-img {
-   height: 290px;
+   height: 18.125rem;
 }
 
 #closing-text {
-   margin-top: 75px;
-   height: 95px;
+   margin-top: 4.6875rem;
+   height: 5.9375rem;
 }
 
 
@@ -354,43 +447,43 @@ height: 200px;
 
 
 footer {
-   height: 900px;
+   height: 56.25rem;
    background-color:#110F40;
 }
 
 
 #footer-logo {
-   width: 170px;
+   width: 10.625rem;
 
-   margin-top: 80px;
+   margin-top: 5rem;
 }
 
 #contact-form {
-   margin-top: 80px;
-   font-size: 10px;
+   margin-top: 5rem;
+   font-size: 0.625rem;
    text-align: center;
 }
 
 
 #contact-form input {
-   width: 230px;
+   width: 14.375rem;
    display: flex;
 
    border: none;
    border-radius: 0;
-   border-bottom: 1px solid #fff;
+   border-bottom: 0.0625rem solid #fff;
    font-style: italic;
 
-   margin-bottom: 30px;
+   margin-bottom: 1.875rem;
    background-color: #110F40;
 
    color: #fff;
 
-   padding-bottom: 15px;
+   padding-bottom: 0.9375rem;
 }
 
 #contact-form button {
-   margin-left: 130px;
+   margin-left: 8.125rem;
 }
 
 #contact-form input:focus {
@@ -398,72 +491,75 @@ footer {
 }
 
 #send_footer {
-   border-radius: 40px;
+   border-radius: 2.5rem;
    background-color: #fff;
    align-items: center;
+   font-family: 'Fino sans', Arial, Helvetica, sans-serif;
    font-style: italic;
 
    cursor: pointer;
-   padding: 10px;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding: 0.625rem;
+   padding-left: 1.25rem;
+   padding-right: 1.25rem;
+
+   border: none !important;
 }
 
 
 #send_footer:hover {
-   box-shadow: inset 0px -50px 0px 0px #FFC738;
+   box-shadow: inset 0rem -3.125rem 0rem 0rem #FFC738;
    transition:all .8s ease;
 }
 
 #send_footer span {
    color: #110F40;
-   margin: 10px;
+   margin: 0.625rem;
 }
 
 #info-con {
    color: #fff;
    grid-column: 2/5;
-   margin-left: 10px;
+   margin-left: 0.625rem;
 }
 
 #info-con h3 {
    font-weight: 700;
    font-style: normal;
-   margin-top: 40px;
-   margin-bottom: 30px;
+   margin-top: 2.5rem;
+   margin-bottom: 1.875rem;
 }
 
 #info-con span {
    display: block;
-   margin-bottom: 10px;
+   margin-bottom: 0.625rem;
 }
 
 #sm-icons {
    display: flex;
-   height: 25px;
+   height: 1.5625rem;
 
    grid-column: 2/4;
-   margin-left: 10px;
-   margin-top: 20px;
+   margin-left: 0.625rem;
+   margin-top: 1.25rem;
 }
 
 #sm-icons img {
-   margin-right: 10px;
+   margin-right: 0.625rem;
 }
 
 #ver-line {
    grid-column: 2/12;
-   border-bottom: solid 1px #fff;
+   border-bottom: solid 0.0625rem #fff;
    
-   margin-top: 30px;
-   margin-bottom: 30px;
+   margin-top: 1.875rem;
+   margin-bottom: 1.875rem;
 }
 
 #ver-line span {
    color: #fff;
-   font-size: 15px;
+   font-size: 0.9375rem;
 
-   padding-bottom: 20px;
+   padding-bottom: 1.25rem;
 }
 
 
@@ -471,93 +567,110 @@ footer {
 
 /* 11. ---Tablet Queries--- */
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 48rem) { 
 
    html {
-      font-size: 120%;
+      font-size: 115%;
    }
 
    header {
          background-color: #ffffff;
-         height: 75px;
+         height: 4.6875rem;
    }
 
    #main-nav {
-         height: 75px;
+         height: 4.6875rem;
    }
 
-
    #burger-con { 
-         height: 50px;
-         width: 52px;
+         height: 3.125rem;
+         width: 3.25rem;
    }
 
    #main-logo {
-         height: 150px;
-         width: 195px;
+         height: 8rem;
+         width: 9rem;
    }
 
 
    #hero-img1 {
-         height: 800px;
-         margin-top: -85px;
+      width: 48rem;
+         height: 50rem;
    }
+
+
    #hero-img2 {
-         height: 800px;
+      width: 47.625rem;
+         height: 50rem;
    }
 
    #hero-text {
-         height: 190px;
+         height: 11.875rem;
+
+         justify-content: center;
+         display: inline-block;
+
+         padding-right: 6.25rem;
+         padding-left: 6.25rem;
+   }
+
+   #hero-text h4 {margin-top: 0;}
+
+   #hero-text h4 span{
+      display: block;
+      margin: 1.25rem;
+
    }
    
    
    #vid-playback {
-   width: 670px;
+   width: 41.875rem;
    object-fit: cover;
-   margin-top: 70px;
+   margin-top: 4.375rem;
    justify-self: center;
    }
    
    #video-text {
-         height: 85px;
-         margin-top: 50px;
+         height: 5.3125rem;
+         margin-top: 3.125rem;
+         padding: 3.125rem;
    }
    
 
    #about-rotation-img {
-         width: 670px;
-         height: 365px;
-         margin-top: 100px;
+         width: 41.875rem;
+         height: 22.8125rem;
+         margin-top: 6.25rem;
          justify-self: center;
    }
    
    #about-us-t-box {
-   height: 180px;
-   margin-top: 50px;
+   height: 11.25rem;
+   margin-top: 3.125rem;
    }
    
    #product-text {
-         height: 255px;
-         width: 485px;
-         margin-top: 100px;
+         height: 15.9375rem;
+         width: 30.3125rem;
+         margin-top: 6.25rem;
 
          justify-self: center;
    }
    
    .product {
-         height: 670px;
-         width: 360px;
+         height: 41.875rem;
+         width: 22.5rem;
    
-         margin-top: 100px;
+         margin-top: 6.25rem;
    
-         border-radius: 50px 50px 0 0;
+         border-radius: 3.125rem 3.125rem 0 0;
 
          display: flex;
-         gap: 20px;
+         gap: 1.25rem;
    }
    
    #product-2 {
-         margin-left: 180px;
+         margin-left: 11.25rem;
    }
    
    #product-3 {
@@ -568,22 +681,22 @@ footer {
    
    #promo {
          background-color: #242424;
-         height: 445px;
+         height: 27.8125rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
    } 
    
    #promo-text {
-         margin-top: 50px;
-         height: 145px;
-         width: 610px;
+         margin-top: 3.125rem;
+         height: 9.0625rem;
+         width: 38.125rem;
 
          justify-self: center;
    }
    
    .promo-n {
-         width: 115px;
-         height: 90px;
+         width: 7.1875rem;
+         height: 5.625rem;
 
          display: inline-block;
          justify-content: space-evenly;
@@ -596,17 +709,17 @@ footer {
    
    
    #closing {
-         margin-bottom: 100px;
+         margin-bottom: 6.25rem;
    }
    #banner-t {
-         height: 60px;
-         margin-top: 50px;
-         margin-bottom: 50px;
+         height: 3.75rem;
+         margin-top: 3.125rem;
+         margin-bottom: 3.125rem;
    }
    
    .closing-img {
-         height: 320px;
-         width: 515px;
+         height: 20rem;
+         width: 32.1875rem;
    }
 
    #cl-img-1 {
@@ -614,49 +727,40 @@ footer {
    }
    #cl-img-2 {
          z-index: 2;
-         margin-top: -30px;
+         margin-top: -1.875rem;
          justify-self: start;
    }
    
    #closing-text {
-         margin-top: 75px;
-         height: 100px;
+         margin-top: 4.6875rem;
+         height: 6.25rem;
    }
    
    
    footer {
-         height: 660px;
+         height: 41.25rem;
    }
    
-   #footer-logo {
-         width: 230px;
-         height: 170px;
+   /* #footer-logo {
+         width: 14.375rem;
+         height: 10.625rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
 
          display: flex;
 
          justify-self: center;
-   }
+   } */
    
    #contact-form {
       display: block;
+      grid-row: 2/3;
+      margin-top: 0;
    }
    
-   #Name_footer{
-      width: 193px;
-   }
 
-   #phone_footer {
-      width: 255px;
-   }
-
-   #email_footer {
-      width: 303px;
-   }
-
-   #message_footer {
-      width: 503px;
+   #contact-form input {
+      width: 21rem;
    }
 
 }
@@ -666,29 +770,37 @@ footer {
 
 /* 12. ---Desktop Queries --- */
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 75rem) { 
 
    html {
-      font-size: 140%;
+      font-size: 130%;
    }
 
 
    header {
          background-color: #ffffff;
-         height: 70px;
+         height: 4.375rem;
    }
 
 
+   #main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem;
+      justify-content: center;
+   }
+
    #main-nav {
-      height: 90px;
+      height: 5.625rem;
 
       position: sticky;
-      top: 0rem;
-
-      display: grid;
-      grid-column: 2/11;
+      top: 1rem;
+      
+      align-items: flex-start;
 
       z-index: 1;
+      flex: 1;
    }
 
 
@@ -700,7 +812,7 @@ footer {
       font-size: 0.75rem;
 
       margin-top: 1.25rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0rem;
 
       display: grid;
       grid-column: 2/11;
@@ -708,18 +820,98 @@ footer {
 
    #burger-con ul li {
       display: inline;
+      margin-right: 3rem;
    }
 
    #main-nav ul {
       margin: 0;
+      margin-top: 0.625rem;
+      display: inline-flex;
    }
 
    #main-nav ul li a {
       display: inline;
       color: #110F3D;
+      margin-right: 2rem;
+      padding-bottom: 0.4375rem;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
 
-
+      font-size: 1.4375rem;
    }
+
+
+   #main-nav ul li a:hover {
+      border-bottom: solid 0.1875rem #F7B92E ;
+      background-color: #f7b72eaf;
+      color: #110F3D;
+
+      transition: all .3s ease-in-out;
+   }
+
+/* 
+   nav.fill ul li a {
+  position: relative;
+   }
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 0.0625rem;
+}
+
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+   /* Keyframes */
+/* @-webkit-keyframes fill {
+   0% {
+     width: 0%;
+     height: 0.0625rem;
+   }
+   50% {
+     width: 100%;
+     height: 0.0625rem;
+   }
+   100% {
+     width: 100%;
+     height: 100%;
+     background: #333;
+   }
+ } */ 
+
+
+   #main-nav ul li:nth-child(4) {
+      margin-left: 6rem;
+   }
+
 
    #burger-con.slide-toggle {
       height: auto;
@@ -733,99 +925,108 @@ footer {
 
 
    #main-logo {
-      height: 130px;
-      width: 160px;
+      height: 8rem;
+      width: 9rem;
+      margin-left: 1.875rem;
 
       z-index: 3;
 
-      margin-top: 2rem;
+      margin-top: 6rem;
       order: -1;
    }
 
+
+
+   
+
    #hero-img1 {
-         height: 625px;
+         height: 39.0625rem;
          margin: 0;
-         margin-right: -15px;
+         margin-right: -0.9375rem;
    }
    #hero-img2 {
-         height: 625px;
+         height: 39.0625rem;
          margin: 0;
-         margin-left: -15px;
+         margin-left: -0.9375rem;
    }
 
    #hero-text {
-         height: 300px;
+         height: 13rem;
+         background-color: #F7B92E;
+         display: flex;
+   }
+
+   #hero-text h4 {
+      text-align: center;
    }
    
     /* 4. ---Video--- */
    
    #vid-playback {
-   height: 530px;
-   width: 860px;
+   height: 33.125rem;
+   width: 53.75rem;
    padding: 0;
-   margin: 100px 0 0 0;
+   margin: 6.25rem 0 0 0;
    object-fit: cover;
    }
    
    #video-text {
-         height: 72px;
-         margin-top: 50px;
+         height: 4.5rem;
+         margin-top: 3.125rem;
+
+         line-height: normal;
    }
    
     /* 5. ---About us--- */
    
    #about-rotation-img {
-         height: 405px;
-         margin-top: 100px;
+         height: 25.3125rem;
+         margin-top: 6.25rem;
    }
    
    #about-us-t-box {
-         height: 285px;
-         margin-top: 60px;
+         margin-top: 3.75rem;
+         padding-bottom: 10rem;
    }
-   
-   
-   #product-text {
-         height: 200px;
-         margin-top: 70px;
-   }
-   
+
+    /* 6. --- Product --- */
+
    .product {
-         height: 670px;
-         width: 368px;
+         height: 41.875rem;
+         width: 23rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
    
-         border-radius: 50px 50px 0 0;
+         border-radius: 3.125rem 3.125rem 0 0;
    }
    
    #product-2 {
-         margin-left: 100px;
+         margin-left: 6.25rem;
    }
    
    #product-3 {
-         margin-left: 100px;
+         margin-left: 6.25rem;
    }
    
 
    #promo {
          background-color: #242424;
-         height: 380px;
+         height: 23.75rem;
    
-         margin-top: 60px;
+         margin-top: 3.75rem;
    } 
    
    #promo-text {
-         margin-top: 55px;
-         height: 210px;
-         width: 470px;
+         margin-top: 3.4375rem;
+         height: 13.125rem;
+         width: 29.375rem;
          align-self: center;
    }
    
    .promo-n {
-         width: 113px;
-         height: 90px;
-         margin: 35px;
+         width: 7.0625rem;
+         height: 5.625rem;
+         margin: 2.1875rem;
 
          align-self: center;
    }
@@ -839,18 +1040,18 @@ footer {
 
    
    #closing {
-         margin-bottom: 75px;
+         margin-bottom: 4.6875rem;
    }
 
    #banner-t {
-         height: 70px;
-         margin-top: 100px;
-         margin-bottom: 50px;
+         height: 4.375rem;
+         margin-top: 6.25rem;
+         margin-bottom: 3.125rem;
    }
    
    .closing-img {
-         height: 320px;
-         width: 515px;
+         height: 20rem;
+         width: 32.1875rem;
    }
 
    #cl-img-1 {
@@ -858,110 +1059,150 @@ footer {
    }
    #cl-img-2 {
          z-index: 2;
-         margin-top: -30px;
+         margin-top: -1.875rem;
          justify-self: start;
    }
    
    #closing-text {
-         margin-top: 75px;
-         height: 100px;
-         width: 600px;
+         margin-top: 4.6875rem;
+         height: 6.25rem;
+         width: 37.5rem;
    }
    
    
    footer {
-         height: 660px;
+         height: 41.25rem;
    }
    
-   #footer-logo {
-         width: 230px;
-         height: 170px;
+   /* #footer-logo {
+         width: 14.375rem;
+         height: 10.625rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
    }
-   
-   
-   #info {
-         width: 212px;
-         height: 132px;
-   }
-   
-   #icons{
-         height: 27px;
-         width: 105px;
-   }
+    */
    
    #contact-form {
          /* display: block; */
-         margin-top: 200px;
+         margin-top: 12.5rem;
+         margin-left: 6.25rem;
 
          grid-row: 1/3;
    }
-   
-   #cont-f-1, #cont-f-2 {
-         height: 30px;
-         width: 232px;
-         margin-bottom: 30px;
-   }
-   
-   #cont-f-4, #cont-f-3 {
-         height: 60px;
-         width: 484px;
-   }
-   
-   #submit-button {
-         height: 30px;
-         width: 100px;
-   }
+
+
+#send_footer {
+      border-radius: 2.5rem;
+      background-color: #fff;
+      align-items: center;
+      font-style: italic;
+
+      cursor: pointer;
+      padding: 0.625rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+
+      margin-left: 20rem;
+}
+
+
+#send_footer:hover {
+      box-shadow: inset 0rem -3.125rem 0rem 0rem #FFC738;
+      transition:all .8s ease;
+}
+
+#send_footer span {
+      color: #110F40;
+      margin: 0.625rem;
+}
+
+#info-con {
+      color: #fff;
+      grid-column: 2/5;
+      margin-left: 0.625rem;
+}
+
+#info-con h3 {
+   margin-top: 0;
+}
+
+
+
+#sm-icons {
+      display: flex;
+
+      grid-column: 2/4;
+      margin-left: 0.625rem;
+}
+
+#sm-icons img {
+      margin-right: 0.625rem;
+}
+
+#ver-line {
+      grid-column: 2/12;
+      border-bottom: solid 0.0625rem #fff;
+      
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+}
+
+#ver-line span {
+      color: #fff;
+      font-size: 0.9375rem;
+
+      padding-bottom: 1.25rem;
+}
+
 
 }
 
 
-@media screen and (min-width: 1920px) { 
+@media screen and (min-width: 120rem) { 
    header {
-         height: 110px;
+         height: 6.875rem;
    }
 
    #main-nav {
-         height: 110px;
+         height: 6.875rem;
    }
 
    #burger-con {display: none;}
 
    #main-logo {
-         height: 130px;
-         width: 160px;
+         height: 8.125rem;
+         width: 10rem;
    }
 
 
    #hero-text {
-         height: 290px;
+         height: 18.125rem;
    }
    
 
    
    #vid-playback {
-      height: 860px;
+      height: 53.75rem;
       padding: 0;
-      margin: 50px 0 0 0;
+      margin: 3.125rem 0 0 0;
       object-fit: cover;
    }
    
    #video-text {
-         height: 123px;
-         margin-top: 50px;
+         height: 7.6875rem;
+         margin-top: 3.125rem;
    }
    
     /* 5. ---About us--- */
    
    #about-rotation-img {
-      height: 275px;
-      margin-top: 60px;
+      height: 17.1875rem;
+      margin-top: 3.75rem;
    }
    
    #about-us-t-box {
-      height: 200px;
-      margin-top: 60px;
+      height: 12.5rem;
+      margin-top: 3.75rem;
    }
    
    
@@ -970,21 +1211,21 @@ footer {
     /* 7. ---Product content--- */
    
    #product-text {
-         height: 345px;
-         margin-top: 70px;
+         height: 21.5625rem;
+         margin-top: 4.375rem;
    }
    
    .product {
-         height: 1020px;
-         width: 560px;
+         height: 63.75rem;
+         width: 35rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
    
-         border-radius: 50px 50px 0 0;
+         border-radius: 3.125rem 3.125rem 0 0;
    }
    
    #product-2 {
-         margin-left: 283px;
+         margin-left: 17.6875rem;
    }
    
    #product-3 {
@@ -995,20 +1236,20 @@ footer {
    
    #promo {
          background-color: #242424;
-         height: 570px;
+         height: 35.625rem;
    
-         margin-top: 60px;
+         margin-top: 3.75rem;
    } 
    
    #promo-text {
-         margin-top: 70px;
-         height: 310px;
+         margin-top: 4.375rem;
+         height: 19.375rem;
    }
    
    .promo-n {
-         width: 140px;
-         height: 120px;
-         margin: 35px;
+         width: 8.75rem;
+         height: 7.5rem;
+         margin: 2.1875rem;
    }
    
    #promo-number {
@@ -1019,70 +1260,70 @@ footer {
    
    
    #closing {
-         margin-bottom: 75px;
+         margin-bottom: 4.6875rem;
    }
    #banner-t {
-         height: 60px;
-         margin-top: 50px;
-         margin-bottom: 50px;
+         height: 3.75rem;
+         margin-top: 3.125rem;
+         margin-bottom: 3.125rem;
    }
    
    .closing-img {
-         height: 525px;
-         width: 850px;
+         height: 32.8125rem;
+         width: 53.125rem;
    }
    
    #closing-text {
-         margin-top: 75px;
-         height: 135px;
+         margin-top: 4.6875rem;
+         height: 8.4375rem;
    }
    
    
    
    
    footer {
-         height: 660px;
+         height: 41.25rem;
    }
    
    #footer-logo {
-         width: 230px;
-         height: 170px;
+         width: 14.375rem;
+         height: 10.625rem;
    
-         margin-top: 70px;
+         margin-top: 4.375rem;
    }
    
    
    #info {
-         width: 212px;
-         height: 132px;
+         width: 13.25rem;
+         height: 8.25rem;
    }
    
    #icons{
-         height: 27px;
-         width: 105px;
+         height: 1.6875rem;
+         width: 6.5625rem;
    }
    
    #contact-form {
          /* display: block; */
-         margin-top: 200px;
+         margin-top: 12.5rem;
 
          grid-row: 1/3;
    }
    
    #cont-f-1, #cont-f-2 {
-         height: 30px;
-         width: 232px;
-         margin-bottom: 30px;
+         height: 1.875rem;
+         width: 14.5rem;
+         margin-bottom: 1.875rem;
    }
    
    #cont-f-4, #cont-f-3 {
-         height: 60px;
-         width: 484px;
+         height: 3.75rem;
+         width: 30.25rem;
    }
    
    #submit-button {
-         height: 30px;
-         width: 100px;
+         height: 1.875rem;
+         width: 6.25rem;
    }
    
 

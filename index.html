@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="css/grid.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://use.typekit.net/dul5hin.css">
+   <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+   
    <title>.:Billy Beer Home Page:.</title>
 </head>
 <body>
@@ -16,20 +18,22 @@
    <header class="grid-con" id="main-header">
       <h2 class="hidden">Main Header</h2>
 
-      <nav class="full-width-grid-con" id="main-nav">
+      <div class="full-width-grid-con" id="main-nav">
          <h3 class="hidden">Main Navigation</h3>
          <button id="button"></button>
-         <div class="col-span-4 m-col-start-11 m-col-end-13" id="burger-con">
-               <ul>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="story.html">OUR STORY</a></li>
-                  <li><a href="#">PRODUCT</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">SEARCH</a></li>
-                  <li><a href="#" class="btn">STORE</a></li>
-               </ul>
-         </div>
-      </nav>
+         <nav class="col-span-4 m-col-start-11 m-col-end-13 l-col-start-2" class="fill" id="burger-con">
+
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="story.html">STORY</a></li>
+               <li><a href="#">PRODUCT</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">SEARCH</a></li>
+               <li><a href="#" class="btn" id="store">STORE</a></li>
+            </ul>
+
+         </nav>
+      </div>
 
       <div class="col-start-1 col-end-3 col-span-full m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8" id="main-logo">
          <h3 class="hidden">Logo</h3>
@@ -41,11 +45,19 @@
    <main>
       <section class="grid-con" id="hero-con">
          <h2 class="hidden">Hero Image</h2>
-            <div class="hero-img box-3 col-span-full m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img1"></div>
+            <div class="hero-imgfull-width-grid-con m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img1">
+               <img src="images/1-hero-img.png" alt="Hero amin img1">
+            </div>
 
-            <div class="hero-img box-4 col-span-full m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img2"></div>
+            <div class="hero-img col-span-full m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img2">
+               <img src="images/2-hero-img.png" alt="Hero amin img2">
+            </div>
 
-            <div class="box-2 col-span-full m-col-full full-width-grid-con xl-col-span-full" id="hero-text"></div>
+            <div class="col-span-full m-col-full full-width-grid-con xl-col-span-full" id="hero-text">
+               <h4>
+                  <span>You deserve a great, light beer.</span>
+                  <span>Billy’s your can!</span></h4>
+            </div>
       </section>
 
 
@@ -53,31 +65,59 @@
          <h2 class="hidden">Product/Commercial Video</h2>
 
          <div class="box-1 col-span-full m-col-start-1 m-col-end-13 l-col-start-2 l-col-end-12" id="vid-playback"></div>
-         <div class="box-3 col-span-full m-col-span-full full-width-grid-con xl-col-start-2 xl-col-end-12" id="video-text"></div>
+         <div class="col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12" id="video-text">
+            <p>"I recently tried Billy Beer for the first time and I have to say, I was blown away. The taste is so smooth and refreshing, it's easily become my new go-to beer. I love the brand's commitment to quality ingredients and ethical practices, and it definitely shows in the taste."</p>
+         </div>
       </section>
 
       <section class="grid-con" id="about-us">
          <h2 class="hidden">About us</h2>
-         <div class="box-2 col-start-1 col-end-5 m-col-start-2 m-col-end-12 full-width-grid-con xl-col-start-3 xl-col-end-11" id="about-rotation-img"></div>
+         <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 full-width-grid-con xl-col-start-3 xl-col-end-11" id="about-rotation-img">
+            <img src="images/4rotation-img-box.png" alt="rotation image 1">
+         </div>
 
-         <div class="box-1 col-span-full m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11" id="about-us-t-box"></div>
+         <div class="col-span-full m-col-span-full full-width-grid-con xl-col-start-3 xl-col-end-11" id="about-us-t-box">
+            <p>Crafted with Passion, Enjoyed with Friends</p>
+            <span>- Billy Carter</span>
+            <button class="btn" id="story-button">OUR STORY</button>
+         </div>
 
       </section>
 
       <section class="grid-con" id="product-con">
          <h2 class="hidden">Product contents</h2>
          
-         <div class="box-3 col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="product-text">
+         <div class="col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="product-text">
+            <p>
+               America’s Light Craft Beer™
+               <span>
+               Yeah, you read that right.
+               Light. Craft. And insanely good.
+               </span>
+               <span>
+               This is #crushablecraft
+               </span>
+               </p>
          </div>
 
-         <div class="product box-1 col-start-1" id="product-1">
-            <img src="images/5-prod.png" alt="beer-1">
-         </div>
-         <div class="product box-1 col-start-4" id="product-2">
-            <img src="images/6-prod.png" alt="beer-2">
-         </div>
-         <div class="product box-1" id="product-3">
-            <img src="images/7-prod.png" alt="beer-3">
+         <div class="products js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="product" id="product-1">
+               <img src="images/5-prod.png" alt="beer-1">
+               <a class="slide__prev" href="#slides__3" title="Next">
+               <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+
+            <div class="product" id="product-2">
+               <img src="images/6-prod.png" alt="beer-2">
+               <a class="slide__prev" href="#slides__1" title="Prev"></a>
+               <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+
+            <div class="product" id="product-3">
+               <img src="images/7-prod.png" alt="beer-3">
+               <a class="slide__prev" href="#slides__2" title="Prev"></a>
+               <a class="slide__next" href="#slides__1" title="Next"></a>
+            </div>
          </div>
       </section>
 
@@ -88,9 +128,12 @@
 
 
          <div class="col-start-2 col-end-4 m-col-start-2 m-col-end-12 l-col-start-7 l-col-end-13 xl-col-start-7 xl-col-end-13" id="promo-number" >
-            <div class="box-3 promo-n" id="promo-1"></div>
-            <div class="box-3 promo-n" id="promo-2"></div>
+            <div class="box-3 promo-n" id="promo-1">
+            </div>
+            <div class="box-3 promo-n" id="promo-2">
+            </div>
             <div class="box-3 promo-n" id="promo-3"></div>
+            </div>
          </div>
       </section>
 
@@ -139,7 +182,7 @@
          <img src="images/icon-twitter.png" alt="twitter icon">
       </div>
 
-      <div class="col-start-2 m-col-start-3 m-col-end-11 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12" id="contact-form">
+      <div class="col-start-2 m-col-start-7 m-col-end-13 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12" id="contact-form">
          <input id="Name_footer" name="Name" 
          type="text" placeholder="  Name*">
          <input id="phone_footer" type="tel" name="Telephone" placeholder="  Telephone*">
@@ -153,5 +196,6 @@
    </footer>  
    
    <script src="js/main.js"></script>
+   <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 </html>
