@@ -22,8 +22,8 @@
 
 @font-face {
    font-family: 'fino_sansbold_italic';
-   src: url('fino_sans_bold_italic-webfont.woff2') format('woff2'),
-      url('fino_sans_bold_italic-webfont.woff') format('woff');
+   src: url('../font/fino_sans_bold_italic-webfont.woff2') format('woff2'),
+      url('../font/fino_sans_bold_italic-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
@@ -33,11 +33,10 @@
 
 @font-face {
    font-family: 'fino_sansbold';
-   src: url('fino_sans_bold-webfont.woff2') format('woff2'),
-      url('fino_sans_bold-webfont.woff') format('woff');
+   src: url('../font/fino_sans_bold-webfont.woff2') format('woff2'),
+      url('../font/fino_sans_bold-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
-
 }
 
 
@@ -45,8 +44,8 @@
 
 @font-face {
    font-family: 'fino_sansitalic';
-   src: url('fino_sans_italic-webfont.woff2') format('woff2'),
-      url('fino_sans_italic-webfont.woff') format('woff');
+   src: url('../font/fino_sans_italic-webfont.woff2') format('woff2'),
+      url('../font/fino_sans_italic-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 
@@ -69,8 +68,8 @@
 
 @font-face {
    font-family: 'fino_sansregular';
-   src: url('fino_sans_regular-webfont.woff2') format('woff2'),
-      url('fino_sans_regular-webfont.woff') format('woff');
+   src: url('../font/fino_sans_regular-webfont.woff2') format('woff2'),
+      url('../font/fino_sans_regular-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 
@@ -87,7 +86,7 @@ html {
 }
 
 body {
-   font-family: 'Fino Sans', Helvetica, sans-serif;
+   font-family: 'fino_sansregular', Helvetica, sans-serif;
    font-size: 1.25rem;
    color: #110F3D;
    background-color: #fff;
@@ -113,7 +112,7 @@ body {
    border: none !important;
    border-radius: 0.9375rem;
    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
-   font-family: 'Fino sans', Arial, Helvetica, sans-serif;
+   font-family: 'fino_sansregular', Arial, Helvetica, sans-serif;
    font-style: bold;
    font-size: 1.125rem;
 }
@@ -285,6 +284,10 @@ object-fit: cover;
    font-style: italic;
 }
 
+#video-text p {
+   line-height: 1.5rem;
+}
+
 /* 5. ---About us--- */
 
 #about-rotation-img {
@@ -351,21 +354,50 @@ height: 12.5rem;
    font-weight: 400;
 }
 
+.products {
+   display: inline-flex;
+   flex-direction: row;
+}
+
 .product {
    height: 29.375rem;
    width: 15rem;
+   
+   display: block;
+   margin-top: 3rem;
+   margin-left: 1.875rem;
+   padding-top: 1.875rem;
+   /* padding-left: 1.25rem; */
 
-   margin-top: 4.375rem;
 
    border-radius: 3.125rem 3.125rem 0 0;
+   background-color: #110F3D;
+
+   text-align: center;
+   color: #fff;
 }
 
-#product-2 {
-   margin-left: 1.25rem;
+
+.product img {
+   width: 11.75rem;
+   height: 17.5625rem;
 }
 
-#product-3 {
-   display: none;
+.product img:hover {
+   margin-top: -0.625rem;
+   margin-bottom: 0.625rem;
+   transition: all .6s ease-in-out;
+}
+
+.product h3 {
+
+   margin-top: 1.25rem;
+   padding-top: 0.625rem;
+   padding-bottom: 0.625rem;
+}
+
+.product span {
+   font-style: italic;
 }
 
 /* * {
@@ -391,33 +423,51 @@ height: 12.5rem;
    line-height: 12.5rem;
    font-size: 5rem;
    color: white;
- } */
+ }
+
+
+
 
 /* 8. ---Promo con--- */
 
 
 #promo {
-   background-color: #242424;
-   height: 59.0625rem;
+   background-color: #110F40;
 
    margin-top: 3.75rem;
+   padding-bottom: 1.875rem;
+
+   color: #fff;
 } 
 
 #promo-text {
-   margin-top: 3.4375rem;
-   height: 17.8125rem;
+   margin-top: 5rem;
+
+   font-size: 3.4rem;
+   font-style: italic;
+   font-weight: 500;
+   text-align: center;
+}
+
+#promo-text h3 {
+   margin-bottom: 0.9375rem;
 }
 
 .promo-n {
-   width: 7.1875rem;
-   height: 5.625rem;
    margin: 2.1875rem;
 }
 
 #promo-number {
    justify-self: center;
-}
 
+   text-align: center;
+   font-size: 2rem;
+   color: #d2f9fa;
+   font-style: italic;
+}
+.promo-n span {
+   font-size: 1.5rem;
+}
 
 
 /* 9. ---Closing--- */
@@ -425,11 +475,34 @@ height: 12.5rem;
 #closing {
    margin-bottom: 4.6875rem;
 }
+
+
 #banner-t {
-   height: 3.75rem;
    margin-top: 3.125rem;
    margin-bottom: 3.125rem;
-}
+
+   color: #F7B92E;
+   font-style: italic;
+   font-size: 2rem;
+
+   white-space: nowrap;
+   overflow: hidden;
+ }
+ 
+#banner-t p {
+   display: inline-block;
+   animation: marquee 10s linear infinite;
+ }
+ 
+ @keyframes marquee {
+   0% {
+     transform: translateX(0);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+ 
 
 .closing-img {
    height: 18.125rem;
@@ -577,11 +650,6 @@ footer {
          background-color: #ffffff;
          height: 4.6875rem;
    }
-
-   #main-nav {
-         height: 4.6875rem;
-   }
-
    #burger-con { 
          height: 3.125rem;
          width: 3.25rem;
@@ -669,35 +737,13 @@ footer {
          gap: 1.25rem;
    }
    
-   #product-2 {
-         margin-left: 11.25rem;
-   }
-   
-   #product-3 {
-         /* display: none; */
-   }
-   
 
    
    #promo {
-         background-color: #242424;
-         height: 27.8125rem;
-   
          margin-top: 4.375rem;
    } 
    
-   #promo-text {
-         margin-top: 3.125rem;
-         height: 9.0625rem;
-         width: 38.125rem;
-
-         justify-self: center;
-   }
-   
    .promo-n {
-         width: 7.1875rem;
-         height: 5.625rem;
-
          display: inline-block;
          justify-content: space-evenly;
    }
@@ -792,15 +838,15 @@ footer {
    }
 
    #main-nav {
-      height: 5.625rem;
 
-      position: sticky;
       top: 1rem;
       
       align-items: flex-start;
 
       z-index: 1;
       flex: 1;
+
+      font-size: 1.2rem;
    }
 
 
@@ -809,7 +855,7 @@ footer {
    
    #burger-con {
       display: block;
-      font-size: 0.75rem;
+      font-size: 0.5rem;
 
       margin-top: 1.25rem;
       margin-bottom: 0rem;
@@ -832,12 +878,12 @@ footer {
    #main-nav ul li a {
       display: inline;
       color: #110F3D;
-      margin-right: 2rem;
-      padding-bottom: 0.4375rem;
+      margin-right: 1.5rem;
+      padding-bottom: 0rem;
       padding-right: 0.625rem;
       padding-left: 0.625rem;
 
-      font-size: 1.4375rem;
+      font-size: 1.2rem;
    }
 
 
@@ -960,6 +1006,8 @@ nav.fill ul li a:hover:after {
       text-align: center;
    }
    
+
+
     /* 4. ---Video--- */
    
    #vid-playback {
@@ -976,6 +1024,8 @@ nav.fill ul li a:hover:after {
 
          line-height: normal;
    }
+
+
    
     /* 5. ---About us--- */
    
@@ -989,53 +1039,24 @@ nav.fill ul li a:hover:after {
          padding-bottom: 10rem;
    }
 
+
+
+
     /* 6. --- Product --- */
 
-   .product {
-         height: 41.875rem;
-         width: 23rem;
-   
-         margin-top: 4.375rem;
-   
-         border-radius: 3.125rem 3.125rem 0 0;
-   }
-   
-   #product-2 {
-         margin-left: 6.25rem;
-   }
-   
-   #product-3 {
-         margin-left: 6.25rem;
-   }
-   
-
-   #promo {
-         background-color: #242424;
-         height: 23.75rem;
-   
-         margin-top: 3.75rem;
-   } 
    
    #promo-text {
-         margin-top: 3.4375rem;
+         margin-top: 5.4rem;
          height: 13.125rem;
-         width: 29.375rem;
-         align-self: center;
+         width: 19.4rem;
    }
    
    .promo-n {
-         width: 7.0625rem;
-         height: 5.625rem;
-         margin: 2.1875rem;
+         margin-top: 150px;
 
          align-self: center;
    }
-   
-   #promo-number {
-         justify-self: center;
-         align-self: center;
-   }
-   
+
    
 
    
