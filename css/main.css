@@ -556,9 +556,9 @@ height: 12.5rem;
  
 #banner-t p {
    display: inline-block;
-   animation: marquee 10s linear infinite;
+   /* animation: marquee 10s linear infinite; */
  }
- 
+/*  
  @keyframes marquee {
    0% {
      transform: translateX(0);
@@ -566,11 +566,11 @@ height: 12.5rem;
    100% {
      transform: translateX(-100%);
    }
- }
+ } */
  
 
-.closing-img {
-   height: 18.125rem;
+#cl-img-2 {
+   z-index: 5;
 }
 
 #closing-text {
@@ -678,7 +678,6 @@ footer {
 
    grid-column: 2/4;
    margin-left: 0.625rem;
-   margin-top: 1.25rem;
 }
 
 #sm-icons img {
