@@ -144,7 +144,7 @@ header {
 
 #main-logo{
    position: absolute;
-   z-index: 2;
+   z-index: 100;
    width: 6.25rem;
    height: 4.8125rem;
    display: grid;
@@ -234,16 +234,12 @@ header {
 
 #hero-img1 {
    object-fit: cover;
-   width: 20rem;
-   height: 21.0625rem;
    padding: 0;
    margin: 0;
 }
 
 #hero-img2 {
    object-fit: cover;
-   width: 20rem;
-   height: 21.0625rem;
    padding: 0;
    margin: 0;
 }
@@ -268,7 +264,7 @@ header {
 .hero-image {
    display: flex;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    overflow: hidden;
  }
  
@@ -332,7 +328,6 @@ header {
 /* 4. ---Video--- */
 
 #vid-playback {
-height: 23.125rem;
 padding: 0;
 margin: 3.125rem 0 0 0;
 object-fit: cover;
@@ -355,9 +350,9 @@ object-fit: cover;
 
 /* 5. ---About us--- */
 
-#about-rotation-img {
-height: 17.1875rem;
+#about-img {
 margin-top: 3.75rem;
+display: flex;
 }
 
 #about-us-t-box {
@@ -410,7 +405,7 @@ height: 12.5rem;
 #product-text p {
    display: inline-flex;
    flex-direction: column;
-   font-weight: 550;
+   font-weight: 850;
 }
 
 #product-text p span {
@@ -425,8 +420,8 @@ height: 12.5rem;
 }
 
 .product {
-   height: 29.375rem;
-   width: 15rem;
+   height: 10rem;
+   width: 20rem;
    
    display: block;
    margin-top: 3rem;
@@ -526,7 +521,7 @@ height: 12.5rem;
    justify-self: center;
 
    text-align: center;
-   font-size: 2rem;
+   font-size: 2.5rem;
    color: #d2f9fa;
    font-style: italic;
 }
@@ -534,6 +529,13 @@ height: 12.5rem;
    font-size: 1.5rem;
 }
 
+#promo-text2 {
+   padding: 3rem;
+   text-align: center;
+   font-family: Helvetica, sans-serif;
+   font-weight: 300;
+   opacity: 80%;
+}
 
 /* 9. ---Closing--- */
 
@@ -574,8 +576,13 @@ height: 12.5rem;
 }
 
 #closing-text {
-   margin-top: 4.6875rem;
-   height: 5.9375rem;
+   text-align: center;
+   margin-top: 2rem;
+   padding: 3rem;
+
+   font-size: 1.5rem;
+   font-family: Helvetica, sans-serif;
+   font-style: italic;
 }
 
 
@@ -726,14 +733,14 @@ footer {
 
 
    #hero-img1 {
-      width: 48rem;
-         height: 50rem;
+      width: 768px;
+      height: 864px;
    }
 
 
    #hero-img2 {
-      width: 47.625rem;
-         height: 50rem;
+      width: 768px;
+      height: 864px;
    }
 
    #hero-text {
@@ -766,14 +773,6 @@ footer {
          height: 5.3125rem;
          margin-top: 3.125rem;
          padding: 3.125rem;
-   }
-   
-
-   #about-rotation-img {
-         width: 41.875rem;
-         height: 22.8125rem;
-         margin-top: 6.25rem;
-         justify-self: center;
    }
    
    #about-us-t-box {
@@ -821,16 +820,8 @@ footer {
    #closing {
          margin-bottom: 6.25rem;
    }
-   #banner-t {
-         height: 3.75rem;
-         margin-top: 3.125rem;
-         margin-bottom: 3.125rem;
-   }
+
    
-   .closing-img {
-         height: 20rem;
-         width: 32.1875rem;
-   }
 
    #cl-img-1 {
          justify-self: end;
@@ -1050,12 +1041,14 @@ nav.fill ul li a:hover:after {
    
 
    #hero-img1 {
-         height: 39.0625rem;
+         width: 600px;
          margin: 0;
          margin-right: -0.9375rem;
+         overflow: hidden;
+         object-fit: cover;
    }
    #hero-img2 {
-         height: 39.0625rem;
+      width: 600px;
          margin: 0;
          margin-left: -0.9375rem;
    }
@@ -1092,10 +1085,8 @@ nav.fill ul li a:hover:after {
 
    
     /* 5. ---About us--- */
-   
-   #about-rotation-img {
-         height: 25.3125rem;
-         margin-top: 6.25rem;
+   #about-img {
+      margin: auto;
    }
    
    #about-us-t-box {
@@ -1109,19 +1100,15 @@ nav.fill ul li a:hover:after {
     /* 6. --- Product --- */
 
    
-   #promo-text {
-         margin-top: 5.4rem;
-         height: 13.125rem;
-         width: 19.4rem;
-   }
-   
    .promo-n {
          margin-top: 150px;
 
          align-self: center;
    }
 
-   
+   #promo-text2 {
+      padding-left: 0;
+   }
 
    
    #closing {
@@ -1133,27 +1120,11 @@ nav.fill ul li a:hover:after {
          margin-top: 6.25rem;
          margin-bottom: 3.125rem;
    }
-   
-   .closing-img {
-         height: 20rem;
-         width: 32.1875rem;
-   }
 
-   #cl-img-1 {
-         justify-self: end;
-   }
-   #cl-img-2 {
-         z-index: 2;
-         margin-top: -1.875rem;
-         justify-self: start;
-   }
    
    #closing-text {
-         margin-top: 4.6875rem;
-         height: 6.25rem;
-         width: 37.5rem;
+      padding: 4rem;
    }
-   
    
    footer {
          height: 41.25rem;
@@ -1244,53 +1215,26 @@ nav.fill ul li a:hover:after {
 
 
 @media screen and (min-width: 120rem) { 
-   header {
-         height: 6.875rem;
+
+   html {
+      font-size: 140%;
    }
 
-   #main-nav {
-         height: 6.875rem;
-   }
-
-   #burger-con {display: none;}
-
-   #main-logo {
-         height: 8.125rem;
-         width: 10rem;
-   }
-
-
-   #hero-text {
-         height: 18.125rem;
-   }
-   
 
    
-   #vid-playback {
-      height: 53.75rem;
-      padding: 0;
-      margin: 3.125rem 0 0 0;
-      object-fit: cover;
-   }
-   
-   #video-text {
-         height: 7.6875rem;
-         margin-top: 3.125rem;
+   #video-text p {
+         padding-bottom: 3.125rem;
    }
    
     /* 5. ---About us--- */
    
-   #about-rotation-img {
-      height: 17.1875rem;
-      margin-top: 3.75rem;
-   }
-   
    #about-us-t-box {
-      height: 12.5rem;
       margin-top: 3.75rem;
    }
    
-   
+   #about-us {
+      margin-top: 5rem;
+   }
    
     /* 6. ---Our story--- */
     /* 7. ---Product content--- */
