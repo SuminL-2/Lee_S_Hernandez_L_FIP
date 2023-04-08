@@ -12,8 +12,9 @@
    8.  Promo con
    9.  Closing
    10. Footer
-   11. Tablet Queries
-   12. Desktop Queries 
+   11. Story page 
+   12. Tablet Queries
+   13. Desktop Queries 
  */
 
 
@@ -91,19 +92,10 @@ body {
    color: #110F3D;
    background-color: #fff;
 }
-
-.box-1 {
-   background-color: #242424;
-}
-.box-2 {
-   background-color: #797979;
-}
-.box-3 {
-   background-color: #EBEBEB;
-}
-.box-4 {
-   background-color: #C4C4C4;
-}
+/* 
+.container {
+   overflow: hidden;
+} */
 
 .hidden {display: none;}
 
@@ -113,7 +105,6 @@ body {
    border-radius: 0.9375rem;
    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
    font-family: 'fino_sansregular', Arial, Helvetica, sans-serif;
-   font-style: bold;
    font-size: 1.125rem;
 }
 
@@ -236,12 +227,18 @@ header {
    object-fit: cover;
    padding: 0;
    margin: 0;
+   z-index: -1;
+   grid-column: 1/-1;
+   height: 22.5rem;
 }
 
 #hero-img2 {
    object-fit: cover;
    padding: 0;
    margin: 0;
+   z-index: -1;
+   grid-column: 1/-1;
+   height: 22.5rem;
 }
 
 #hero-text {
@@ -259,6 +256,8 @@ header {
 
    margin-top: 2.8rem;
 }
+
+
 /* new - for sliding images */
 
 .hero-image {
@@ -308,13 +307,14 @@ header {
    right: 20px;
    display: flex;
    gap: 10px;
+   flex-direction: column;
  }
  
  .dot {
    width: 10px;
    height: 10px;
    border-radius: 50%;
-   background-color: #ccc;
+   background-color: #110F3D;
    cursor: pointer;
    opacity: 0.5;
  }
@@ -340,7 +340,8 @@ object-fit: cover;
    padding: 1.5625rem;
 
    text-align: center;
-   display: inline;
+   display: inline-flex;
+   font-family: Helvetica, sans-serif;
    font-style: italic;
 }
 
@@ -372,9 +373,17 @@ align-items: center;
    margin-top: 1.25rem;
 }
 
-#about-us-t-box button {
+#story-button {
    width: 7.5rem;
    margin-top: 1.25rem;
+   text-decoration: none;
+   color: #110F3D;
+}
+
+#story-button:hover {
+   box-shadow: inset 0 -5rem 0 #110F3D;
+   color: #fff;
+   transition: all .6s ease-in-out;
 }
 
 
@@ -414,76 +423,112 @@ height: 12.5rem;
    font-weight: 400;
 }
 
+/* mobile slider */
+
 .products {
-   display: inline-flex;
-   flex-direction: row;
+   overflow: hidden;
+   grid-column: 1/span2;
 }
 
-.product {
-   height: 10rem;
-   width: 20rem;
-   
-   display: block;
-   margin-top: 3rem;
-   margin-left: 1.875rem;
-   padding-top: 1.875rem;
-   /* padding-left: 1.25rem; */
+.arrow {
+   border: solid #F7B92E;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+   transform: rotate(-45deg);
+   position: relative;
+   top: 50vh;
+   z-index: +1;
+}
 
+.f-left {
+   float: left;
+   left: 7vw;
+}
 
-   border-radius: 3.125rem 3.125rem 0 0;
+.f-right {
+   float: right;
+   right: 7vw;
+}
+
+.a-left {
+   transform: rotate(135deg);
+}
+
+.slider-card {
+   width: 90vw;
+}
+
+.slider-card {
+   background-size: contain;
+   background-position: 50% 17vh;
    background-color: #110F3D;
+   border-radius: 3.125rem 3.125rem 0 0;
+   padding-bottom: 2rem;
 
+   margin: 3vw;
+}
+
+.slider-card a {
+   background-color: #F7B92E;
+   text-decoration: none;
+}
+
+.slider-card a:hover {
+   box-shadow: inset  0 -3rem 0 #fff;
+   color: #110F3D;
+   transition: all .5s ease;
+
+}
+
+.mb-slider {
+   display: inline-flex;
+   position: relative;
+   transition: all 0.5s ease-in-out;
+}
+
+.mb-slider h4{
+
+   margin-top: 0;
+   color: #fff;
+   font-size: 2rem;
+   line-height: 95%;
+   font-weight: 600;
+   text-align: center;
+}
+.slider span {
    text-align: center;
    color: #fff;
+   font-size: 1.5rem;
 }
 
-
-.product img {
-   width: 11.75rem;
-   height: 17.5625rem;
-}
-
-.product img:hover {
-   margin-top: -0.625rem;
-   margin-bottom: 0.625rem;
-   transition: all .6s ease-in-out;
-}
-
-.product h3 {
-
-   margin-top: 1.25rem;
-   padding-top: 0.625rem;
-   padding-bottom: 0.625rem;
-}
-
-.product span {
-   font-style: italic;
-}
-
-/* * {
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
- }
- 
- .products {
-   background: #EEE;
- }
- 
- .product {
-   width: 66%;
-   height: 12.5rem;
-   margin-right: 0.625rem;
-   background: #110F3D;
- }
- 
- /* cell number */
- .product:before {
+.slider img {
    display: block;
-   text-align: center;
-   line-height: 12.5rem;
-   font-size: 5rem;
+   width: 45vw;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.slider img:hover {
+   transform: scale(1.05);
+   transition: all .5s ease-in-out;
+}
+
+.mb-slider a {
+   width: 30vw;
+   display: block;
+   padding: 0.1em 1em;
    color: white;
- }
+   margin: 3vh auto ;
+   border-radius: 20px;
+   font-size: 4vw;
+   text-align: center;
+}
+
+.slider a:active {
+   filter: brightness(50%);
+}
 
 
 
@@ -503,7 +548,7 @@ height: 12.5rem;
 #promo-text {
    margin-top: 5rem;
 
-   font-size: 3.4rem;
+   font-size: 2.3rem;
    font-style: italic;
    font-weight: 500;
    text-align: center;
@@ -550,7 +595,7 @@ height: 12.5rem;
 
    color: #F7B92E;
    font-style: italic;
-   font-size: 2rem;
+   font-size: 1.7rem;
 
    white-space: nowrap;
    overflow: hidden;
@@ -578,9 +623,9 @@ height: 12.5rem;
 #closing-text {
    text-align: center;
    margin-top: 2rem;
-   padding: 3rem;
+   padding: 2.5rem;
 
-   font-size: 1.5rem;
+   font-size: 1rem;
    font-family: Helvetica, sans-serif;
    font-style: italic;
 }
@@ -691,25 +736,39 @@ footer {
    margin-right: 0.625rem;
 }
 
-#ver-line {
-   grid-column: 2/12;
-   border-bottom: solid 0.0625rem #fff;
-   
-   margin-top: 1.875rem;
-   margin-bottom: 1.875rem;
+
+
+ /* 11.  Story page -- */
+
+.title {
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 900;
+
+   margin-top: 3rem;
+   margin-bottom: 3rem;
 }
 
-#ver-line span {
-   color: #fff;
-   font-size: 0.9375rem;
-
-   padding-bottom: 1.25rem;
+#st-hero-t {
+   text-align: center;
+   color: #78150D;
+   margin-bottom: 2rem;
 }
 
+.story {
+   font-family: Helvetica, sans-serif;
+   font-size: 1rem;
+   line-height: normal;
 
+   padding: 2rem;
+}
 
+.story h4 {
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
 
-/* 11. ---Tablet Queries--- */
+/* 12. ---Tablet Queries--- */
 
 @media screen and (min-width: 48rem) { 
 
@@ -733,14 +792,14 @@ footer {
 
 
    #hero-img1 {
-      width: 768px;
-      height: 864px;
+      width: 48rem;
+      height: 54rem;
    }
 
 
    #hero-img2 {
-      width: 768px;
-      height: 864px;
+      width: 48rem;
+      height: 54rem;
    }
 
    #hero-text {
@@ -779,27 +838,16 @@ footer {
    height: 11.25rem;
    margin-top: 3.125rem;
    }
-   
-   #product-text {
-         height: 15.9375rem;
-         width: 30.3125rem;
-         margin-top: 6.25rem;
 
-         justify-self: center;
-   }
-   
-   .product {
-         height: 41.875rem;
-         width: 22.5rem;
-   
-         margin-top: 6.25rem;
-   
-         border-radius: 3.125rem 3.125rem 0 0;
+   /* product slider */
 
-         display: flex;
-         gap: 1.25rem;
+   .slider-card {
+      width: 60vw; 
    }
-   
+
+
+
+
 
    
    #promo {
@@ -864,7 +912,14 @@ footer {
       width: 21rem;
    }
 
+
+   /* story page */
+
+   .title {
+      margin-top: 5rem;
+   }
 }
+
 
 
 
@@ -944,8 +999,7 @@ footer {
 
    #main-nav ul li a:hover {
       border-bottom: solid 0.1875rem #F7B92E ;
-      background-color: #f7b72eaf;
-      color: #110F3D;
+      color: #F7B92E;
 
       transition: all .3s ease-in-out;
    }
@@ -1010,7 +1064,7 @@ nav.fill ul li a:hover:after {
 
 
    #main-nav ul li:nth-child(4) {
-      margin-left: 6rem;
+      margin-left: 6.5rem;
    }
 
 
@@ -1046,11 +1100,13 @@ nav.fill ul li a:hover:after {
          margin-right: -0.9375rem;
          overflow: hidden;
          object-fit: cover;
+         grid-column: 1/6;
    }
    #hero-img2 {
       width: 600px;
          margin: 0;
-         margin-left: -0.9375rem;
+         margin-left: -0.7rem;
+         grid-column: 7/-1;
    }
 
    #hero-text {
@@ -1068,25 +1124,20 @@ nav.fill ul li a:hover:after {
     /* 4. ---Video--- */
    
    #vid-playback {
-   height: 33.125rem;
-   width: 53.75rem;
    padding: 0;
    margin: 6.25rem 0 0 0;
    object-fit: cover;
    }
-   
-   #video-text {
-         height: 4.5rem;
-         margin-top: 3.125rem;
 
-         line-height: normal;
+   #video-text p{
+      padding-bottom: 5rem;
    }
 
 
    
     /* 5. ---About us--- */
    #about-img {
-      margin: auto;
+      margin: 0 auto;
    }
    
    #about-us-t-box {
@@ -1099,6 +1150,30 @@ nav.fill ul li a:hover:after {
 
     /* 6. --- Product --- */
 
+
+    .slider-card {
+      width: 29vw;
+      padding: 0 auto;
+      margin-left: 0rem;
+      margin-right: 1rem;
+   }
+
+   .slider-card:first-child {
+      margin-left: 0.5rem;
+   }
+   .arrow {display: none;}
+
+
+   .mb-slider a {
+      width: 10vw;
+      display: block;
+      padding: 0.2rem;
+      color: white;
+      margin: 3vh auto ;
+      border-radius: 20px;
+      font-size: 1rem;
+      text-align: center;
+   }
    
    .promo-n {
          margin-top: 150px;
@@ -1238,27 +1313,12 @@ nav.fill ul li a:hover:after {
    
     /* 6. ---Our story--- */
     /* 7. ---Product content--- */
-   
-   #product-text {
-         height: 21.5625rem;
-         margin-top: 4.375rem;
-   }
-   
-   .product {
-         height: 63.75rem;
-         width: 35rem;
-   
-         margin-top: 4.375rem;
-   
-         border-radius: 3.125rem 3.125rem 0 0;
-   }
-   
-   #product-2 {
-         margin-left: 17.6875rem;
-   }
-   
-   #product-3 {
-         display: none;
+
+   .slider-card {
+      width: 25vw;
+      padding: 0 auto;
+      margin-left: 1rem;
+      margin-right: 0;
    }
    
    

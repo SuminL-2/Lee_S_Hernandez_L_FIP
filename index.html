@@ -8,11 +8,10 @@
    <link rel="stylesheet" href="css/grid.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://use.typekit.net/dul5hin.css">
-   <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
    
    <title>.:Billy Beer Home Page:.</title>
 </head>
-<body>
+<body class="container">
    <h1 class="hidden">Respomsive Prototype Billy Beer Home Page</h1>
 
    <header class="grid-con" id="main-header">
@@ -21,14 +20,14 @@
       <div class="full-width-grid-con" id="main-nav">
          <h3 class="hidden">Main Navigation</h3>
          <button id="button"></button>
-         <nav class="col-span-4 m-col-start-11 m-col-end-13 l-col-start-2" class="fill" id="burger-con">
+         <nav class="col-span-4 m-col-start-11 m-col-end-13 l-col-start-2" id="burger-con">
 
             <ul>
                <li><a href="index.html">HOME</a></li>
                <li><a href="story.html">STORY</a></li>
                <li><a href="#">PRODUCT</a></li>
+               <li><a href="#">GALLERY</a></li>
                <li><a href="#">Contact</a></li>
-               <li><a href="#">SEARCH</a></li>
                <li><a href="#" id="store">STORE</a></li>
             </ul>
 
@@ -45,59 +44,62 @@
    <main>
       <section class="grid-con" id="hero-con">
          <h2 class="hidden">Hero Image</h2>
-            <div class="hero-image hero-img full-width-grid-con m-col-start-1 m-col-end-13 l-col-span-6 xl-col-span-6" id="hero-img1">
+            <div class="hero-image hero-img full-width-grid-con m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img1">
+               <h3 class="hidden">Left Hero Image</h3>
                <div class="left-side">
-                  <img sizes="(max-width: 960px) 100vw, 960px"
+                  <img
+                     sizes="(max-width: 960px) 100vw, 960px"
                      srcset="
-                        images/hero0_ux7ner_c_scale,w_300.jpg 300w,
-                        images/hero0_ux7ner_c_scale,w_541.jpg 541w,
-                        images/hero0_ux7ner_c_scale,w_760.jpg 760w,
-                        images/hero0_ux7ner_c_scale,w_895.jpg 895w,
-                        images/hero0_ux7ner_c_scale,w_960.jpg 960w"
-                        src="images/hero0_ux7ner_c_scale,w_960.jpg"
-                        alt="Main hero 0">
+                     images/Hero-img0_q4mkq6_c_scale,w_300.jpg 300w,
+                     images/Hero-img0_q4mkq6_c_scale,w_522.jpg 522w,
+                     images/Hero-img0_q4mkq6_c_scale,w_673.jpg 673w,
+                     images/Hero-img0_q4mkq6_c_scale,w_960.jpg 960w"
+                     src="images/Hero-img0_q4mkq6_c_scale,w_960.jpg"
+                     alt="hero-left">
                </div>
             </div>
 
             <div class="right-side hero-img col-span-full m-col-span-full l-col-span-6 xl-col-span-6" id="hero-img2">
+               <h3 class="hidden">Right Hero Image Slider</h3>
                <div class="image-slider">
+                  <img
+                  sizes="(max-width: 960px) 100vw, 960px"
+                  srcset="
+                  images/render2_hgzjhx_c_scale,w_300.jpg 300w,
+                  images/render2_hgzjhx_c_scale,w_481.jpg 481w,
+                  images/render2_hgzjhx_c_scale,w_627.jpg 627w,
+                  images/render2_hgzjhx_c_scale,w_756.jpg 756w,
+                  images/render2_hgzjhx_c_scale,w_935.jpg 935w,
+                  images/render2_hgzjhx_c_scale,w_960.jpg 960w"
+                  src="render2_hgzjhx_c_scale,w_960.jpg"
+                  alt="hero-right-1">
                   <img
                      sizes="(max-width: 960px) 100vw, 960px"
                      srcset="
-                     images/hero1_w3jedw_c_scale,w_300.jpg 300w,
-                     images/hero1_w3jedw_c_scale,w_478.jpg 478w,
-                     images/hero1_w3jedw_c_scale,w_624.jpg 624w,
-                     images/hero1_w3jedw_c_scale,w_762.jpg 762w,
-                     images/hero1_w3jedw_c_scale,w_900.jpg 900w,
-                     images/hero1_w3jedw_c_scale,w_960.jpg 960w"
-                     src="images/hero1_w3jedw_c_scale,w_960.jpg"
-                     alt="">
-                     <img
+                        images/render5_xgkxsl_c_scale,w_300.jpg 300w,
+                        images/render5_xgkxsl_c_scale,w_447.jpg 447w,
+                        images/render5_xgkxsl_c_scale,w_625.jpg 625w,
+                        images/render5_xgkxsl_c_scale,w_854.jpg 854w,
+                        images/render5_xgkxsl_c_scale,w_960.jpg 960w"
+                        src="images/render5_xgkxsl_c_scale,w_960.jpg"
+                        alt="hero-right-2">
+                  <img
                      sizes="(max-width: 960px) 100vw, 960px"
-                     srcset="
-                     images/hero2_ld7gjx_c_scale,w_300.jpg 300w,
-                     images/hero2_ld7gjx_c_scale,w_466.jpg 466w,
-                     images/hero2_ld7gjx_c_scale,w_599.jpg 599w,
-                     images/hero2_ld7gjx_c_scale,w_712.jpg 712w,
-                     images/hero2_ld7gjx_c_scale,w_856.jpg 856w,
-                     images/hero2_ld7gjx_c_scale,w_942.jpg 942w,
-                     images/hero2_ld7gjx_c_scale,w_960.jpg 960w"
-                     src="images/hero2_ld7gjx_c_scale,w_960.jpg"
-                     alt="">
-                     <img
-                     sizes="(max-width: 960px) 100vw, 960px"
-                     srcset="
-                     images/hero3_wsivm6_c_scale,w_300.jpg 300w,
-                     images/hero3_wsivm6_c_scale,w_470.jpg 470w,
-                     images/hero3_wsivm6_c_scale,w_611.jpg 611w,
-                     images/hero3_wsivm6_c_scale,w_739.jpg 739w,
-                     images/hero3_wsivm6_c_scale,w_869.jpg 869w,
-                     images/hero3_wsivm6_c_scale,w_960.jpg 960w"
-                     src="images/hero3_wsivm6_c_scale,w_960.jpg"
-                     alt="">
-                     <div class="dots"></div>
-                     <div class="dot"></div>
-                     <div class="dot"></div>
+                        srcset="
+                           images/render1_svhmbk_c_scale,w_300.jpg 300w,
+                           images/render1_svhmbk_c_scale,w_461.jpg 461w,
+                           images/render1_svhmbk_c_scale,w_596.jpg 596w,
+                           images/render1_svhmbk_c_scale,w_727.jpg 727w,
+                           images/render1_svhmbk_c_scale,w_826.jpg 826w,
+                           images/render1_svhmbk_c_scale,w_960.jpg 960w"
+                           src="images/render1_svhmbk_c_scale,w_960.jpg"
+                           alt="hero-right-3">
+                     
+               </div>
+               <div class="dots">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
                </div>
             </div>
 
@@ -150,7 +152,8 @@
          <div class="col-span-full m-col-span-full full-width-grid-con xl-col-span-full" id="about-us-t-box">
             <p>Crafted with Passion, Enjoyed with Friends</p>
             <span>- Billy Carter</span>
-            <button class="btn" id="story-button">OUR STORY</button>
+            <a href="story.html" class="btn" id="story-button">OUR STORY
+            </a>
          </div>
 
       </section>
@@ -171,31 +174,43 @@
                </p>
          </div>
 
-         <div class="products">
-            <div class="product" id="product-1">
-               <img src="images/can.PNG" alt="beer-1">
-               <h3>ORIGINAL</h3>
-               <span>350ml - 3.48% ABV</span>
-               <a class="slide__prev" href="#slides__3" title="Next">
-               <a class="slide__next" href="#slides__2" title="Next"></a>
+            <div class="products">
+               <h3 class="hidden">Mobile  Product Slider</h3>
+               <div class="slider">
+                  <div >
+                     <div class="arrow a-left f-left"></div>
+                     <div class="arrow a-right f-right"></div>
+                  </div>
+                  <div class="mb-slider" style="transform: translateX(0vw);">
+                     <div class="slider-card" id="slider-classic">
+                        <img src="images/original-can.PNG" alt="Classic can Image">
+                        <h4>BILLY<br>CLASSIC<br>
+                           <span>350ml - 3.48% ABV</span>
+                        </h4>
+                           
+                        <a href="#">Learn More</a>
+                     </div>
+                     <div class="slider-card" id="slider-light">
+                        <img src="images/light-can.PNG" alt="Light can Image">
+                        <h4>BILLY<br>LIGHT<br>
+                           <span>350ml - 1.28% ABV</span>
+                        </h4>
+                           
+                        <a href="#">Learn More</a>
+                           
+                     </div>
+                     <div class="slider-card" id="slider-zero">
+                        <img src="images/zero-can.PNG" alt="Zero can Image">
+                        <h4>BILLY<br>ZERO<br>
+                           <span>350ml - 0 CAL</span>
+                        </h4>
+                           
+                        <a href="#">Learn More</a>
+                           
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <div class="product" id="product-2">
-               <img src="images/can.PNG" alt="beer-2">
-               <h3>ZERO CAL</h3>
-               <span>350ml - 3.48% ABV</span>
-               <a class="slide__prev" href="#slides__1" title="Prev"></a>
-               <a class="slide__next" href="#slides__3" title="Next"></a>
-            </div>
-
-            <div class="product" id="product-3">
-               <img src="images/can.PNG" alt="beer-3">
-               <h3>STRONG APA</h3>
-               <span>350ml - 6.84% ABV</span>
-               <a class="slide__prev" href="#slides__2" title="Prev"></a>
-               <a class="slide__next" href="#slides__1" title="Next"></a>
-            </div>
-         </div>
       </section>
 
       <section class="grid-con" id="promo">
@@ -217,11 +232,10 @@
             <div class="promo-n" id="promo-3">
                <p>3.48<br><span>%ABV</span></p>
             </div>
-            </div>
          </div>
 
-         <div class="col-span-full m-col-span-full l-col-start-2 l-col-end-8 xl-col-start-2 xl-col-end-9" id="promo-text2">
-            <p>with fewer calories than all the big guys</p>
+         <div class="col-span-full m-col-span-full l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-end-6" id="promo-text2">
+            <p>with fewer calories <br>than all the big guys</p>
 
          </div>
       </section>
@@ -270,7 +284,9 @@
 
          <div class="col-span-full m-col-span-full l-col-span-full xl-col-start-2 xl-col-end-12" id="closing-text">
             <p>“The quality of our beer isn’t about what we added.
-               It’s about what we haven’t added.”</p>
+               It’s about what we haven’t added.”<br><br>
+               And we are beyond confident that once you try it, <br>you'll have discovered your new, favorite beer!
+            </p>
          </div>
       </section>
 
@@ -314,10 +330,8 @@
                <span>Send</span>
          </button>
       </div>
-
    </footer>  
    
    <script src="js/main.js"></script>
-   <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 </html>

@@ -72,13 +72,6 @@ function setActiveDot(index) {
 }
 
 
-function setActiveDot(index) {
-  dots.forEach((dot) => {
-    dot.classList.remove("active");
-  });
-  dots[index].classList.add("active");
-}
-
 function handleDotClick(event) {
     const index = parseInt(event.target.dataset.index, 10);
     currentImageIndex = index;
@@ -105,6 +98,38 @@ function handleDotClick(event) {
     imageSlider.style.top = `${newPosition}%`;
     setActiveDot(currentImageIndex);
     }
+
+
+
+// mobile product slider
 	
+(() => {
+	let slider = document.querySelector('.mb-slider'),
+   arrowRight = document.querySelector('.a-right'),
+   arrowLeft = document.querySelector('.a-left');
 
 
+	function moveRight () {
+	if (slider.style.transform == "translateX(0vw)") {
+		slider.style.transform = "translateX(-95vw)"
+		} else if (slider.style.transform == "translateX(-95vw)") {
+		slider.style.transform = "translateX(-190vw)"
+		} else if (slider.style.transform == "translateX(-190vw)") {
+		return
+		}
+}
+
+	function moveLeft () {
+	if (slider.style.transform == "translateX(0vw)") {
+	return
+	} else if (slider.style.transform == "translateX(-95vw)") {
+	slider.style.transform = "translateX(0vw)"
+	} else if (slider.style.transform == "translateX(-190vw)") {
+		 slider.style.transform = "translateX(-95vw)"
+	}
+	}
+
+	arrowRight.addEventListener('click',moveRight);
+	arrowLeft.addEventListener('click',moveLeft);
+
+})();
