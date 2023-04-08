@@ -143,6 +143,7 @@ header {
    justify-self: center;
 
    margin-top: 1.25rem;
+   margin-left: 3rem;
 }
 
 #main-logo:hover {
@@ -766,6 +767,15 @@ footer {
 .story h4 {
    font-size: 1.4rem;
    margin-bottom: 1rem;
+   font-weight: 600;
+}
+
+.cl-t {
+   color: #78150D;
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
 }
 
 /* 12. ---Tablet Queries--- */
@@ -842,10 +852,13 @@ footer {
    /* product slider */
 
    .slider-card {
-      width: 60vw; 
+      width: 50vw; 
    }
 
 
+   .slider-card img {
+      width: 25vw;
+   }
 
 
 
@@ -916,7 +929,23 @@ footer {
    /* story page */
 
    .title {
+      margin-top: 7rem;
+   }
+
+   #st-img-2 {
       margin-top: 5rem;
+   }
+   
+   #st-img-4 {
+      margin-top: 3rem;
+   }
+   
+   #st-2 {
+      margin-top: -4rem;
+   }
+   
+   #st-3 {
+      margin-top: -4rem;
    }
 }
 
@@ -1096,6 +1125,7 @@ nav.fill ul li a:hover:after {
 
    #hero-img1 {
          width: 600px;
+         height: 675px;
          margin: 0;
          margin-right: -0.9375rem;
          overflow: hidden;
@@ -1104,6 +1134,7 @@ nav.fill ul li a:hover:after {
    }
    #hero-img2 {
       width: 600px;
+      height: 675px;
          margin: 0;
          margin-left: -0.7rem;
          grid-column: 7/-1;
@@ -1152,7 +1183,7 @@ nav.fill ul li a:hover:after {
 
 
     .slider-card {
-      width: 29vw;
+      width: 28vw;
       padding: 0 auto;
       margin-left: 0rem;
       margin-right: 1rem;
@@ -1161,6 +1192,12 @@ nav.fill ul li a:hover:after {
    .slider-card:first-child {
       margin-left: 0.5rem;
    }
+
+   .slider-card img {
+      width: 20vw;
+   }
+
+
    .arrow {display: none;}
 
 
@@ -1174,6 +1211,7 @@ nav.fill ul li a:hover:after {
       font-size: 1rem;
       text-align: center;
    }
+
    
    .promo-n {
          margin-top: 150px;
