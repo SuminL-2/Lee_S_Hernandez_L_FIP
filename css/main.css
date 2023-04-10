@@ -21,7 +21,7 @@
  /* 0.  Web font -- */
 
 
-@font-face {
+ @font-face {
    font-family: 'fino_sansbold_italic';
    src: url('../font/fino_sans_bold_italic-webfont.woff2') format('woff2'),
       url('../font/fino_sans_bold_italic-webfont.woff') format('woff');
@@ -792,11 +792,6 @@ footer {
 
 }
 
-#st-3 h4, #st-3 p{
-   margin-left: 100px;
-   margin-right: 100px;
-}
-
 
 /* 12. ---Tablet Queries--- */
 
@@ -1011,8 +1006,8 @@ footer {
    #burger-con {
       display: block;
       font-size: 0.5rem;
-
-      margin-top: 1.25rem;
+      justify-self: center;
+      margin-top: 1.4rem;
       margin-bottom: 0rem;
    }
 
@@ -1025,6 +1020,7 @@ footer {
       margin: 0;
       margin-top: 0.625rem;
       display: inline-flex;
+
    }
 
    #main-nav ul li a {
@@ -1105,7 +1101,11 @@ nav.fill ul li a:hover:after {
  } */ 
 
    #burger-con ul li:nth-child(4) {
-      margin-left: 7rem;
+      margin-left: 6.5rem;
+   }
+
+   #burger-con ul li:last-child {
+      margin-right: 0;
    }
 
 
@@ -1335,6 +1335,10 @@ nav.fill ul li a:hover:after {
       padding-bottom: 1.25rem;
 }
 
+#st-3 h4, #st-3 p{
+   margin-left: 100px;
+   margin-right: 100px;
+}
 
 }
 
@@ -1397,6 +1401,10 @@ nav.fill ul li a:hover:after {
    #send_footer {
       margin-top: 3rem;
       font-size: 1.2rem;
+   }
+
+   #st-3 {
+      height: 70vh;
    }
 
 }
