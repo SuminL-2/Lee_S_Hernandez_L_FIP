@@ -1,6 +1,5 @@
 # Lee_S_Hernandez_L_FIP
 <img src="images/BillyBeerLogo.svg" alt="Billy Beer main logo">
-![Alt text](images/BillyBeerLogo.svg)
 
 Billy Beer was a brand of American beer that was produced in the 1970s. It was marketed as a lower-priced alternative to other domestic beers, and was named after President Jimmy Carter's brother, Billy Carter, who served as a spokesman for the brand. Despite initial success, sales of Billy Beer declined rapidly and the brand was eventually discontinued.
 
