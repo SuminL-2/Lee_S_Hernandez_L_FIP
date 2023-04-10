@@ -792,6 +792,48 @@ footer {
 
 }
 
+/* 404 page styling */
+
+#error-page {
+   background-color: #830000;
+   display: grid;
+   color: rgba(255, 255, 255, 0.633);
+   font-family: Helvetica, sans-serif;
+   grid-column: 1/-1;
+}
+
+#error-text {
+   margin: 3rem;
+}
+
+#error-text h3{
+   font-size: 3rem;
+   color: rgb(240, 240, 240);
+   font-weight: 700;
+   margin-bottom: 3rem;
+}
+
+#error-text h4 {
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-size: 2rem;
+}
+
+#error-text p {
+   line-height: normal;
+}
+
+#error-text a {
+   color: #f7b72ed6;
+}
+
+#x {
+   height: 100px;
+   text-decoration: none;
+   margin-left: 3rem;
+   margin-bottom: -2rem;
+}
+
 
 /* 12. ---Tablet Queries--- */
 
@@ -958,6 +1000,10 @@ footer {
    
    #st-3 {
       margin-top: -4rem;
+   }
+
+   #error-text {
+      margin: 5rem;
    }
 }
 
