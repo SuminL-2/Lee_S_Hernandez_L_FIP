@@ -21,7 +21,7 @@
  /* 0.  Web font -- */
 
 
-@font-face {
+ @font-face {
    font-family: 'fino_sansbold_italic';
    src: url('../font/fino_sans_bold_italic-webfont.woff2') format('woff2'),
       url('../font/fino_sans_bold_italic-webfont.woff') format('woff');
