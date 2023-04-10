@@ -474,16 +474,19 @@ height: 12.5rem;
    margin: 3vw;
 }
 
-.slider-card a {
+.slider-card h5 {
    background-color: #F7B92E;
    text-decoration: none;
 }
 
-.slider-card a:hover {
+.slider-card h5:hover {
    box-shadow: inset  0 -3rem 0 #fff;
    color: #110F3D;
    transition: all .5s ease;
+}
 
+.prod-desc {
+   display: none;
 }
 
 .mb-slider {
@@ -519,7 +522,7 @@ height: 12.5rem;
    transition: all .5s ease-in-out;
 }
 
-.mb-slider a {
+.mb-slider h5 {
    width: 30vw;
    display: block;
    padding: 0.1em 1em;
@@ -528,10 +531,25 @@ height: 12.5rem;
    border-radius: 1.25rem;
    font-size: 4vw;
    text-align: center;
+   cursor: pointer;
 }
 
-.slider a:active {
+.slider h5:active {
    filter: brightness(50%);
+}
+
+.prod-desc {
+   background-color: #ffffff;
+   width: 7vw;
+   height: 5vw;
+   text-align: center;
+   padding: 2vw 1vw;
+   border-radius: 50%;
+   position: absolute;
+   top: 12vw;
+   left: 20vw;
+   color: #e29b01;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
 }
 
 
@@ -604,7 +622,7 @@ height: 12.5rem;
    white-space: nowrap;
    overflow: hidden;
  }
- 
+
 #banner-t p {
    display: inline-block;
    /* animation: marquee 10s linear infinite; */
@@ -1132,6 +1150,10 @@ footer {
       width: 25vw;
    }
 
+   .mb-slider h5 {
+      font-size: 3vw;
+   }
+
 
 
    
@@ -1458,8 +1480,13 @@ nav.fill ul li a:hover:after {
     /* 6. --- Product --- */
 
 
+    .products {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     .slider-card {
-      width: 23.4375rem;
+      width: 380px;
       padding: 0 auto;
       margin-left: 0rem;
       margin-right: 1rem;
@@ -1477,14 +1504,14 @@ nav.fill ul li a:hover:after {
    .arrow {display: none;}
 
 
-   .mb-slider a {
-      width: 10vw;
+   .mb-slider h5 {
+      width: 13vw;
       display: block;
       padding: 0.2rem;
       color: white;
-      margin: 3vh auto ;
+      margin: 2vh auto ;
       border-radius: 1.25rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-align: center;
    }
 
