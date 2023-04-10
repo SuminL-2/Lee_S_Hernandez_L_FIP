@@ -186,14 +186,12 @@
                   <div class="mb-slider" style="transform: translateX(0vw);">
                      <div class="slider-card" id="slider-classic">
                         <img src="images/original-can.PNG" alt="Classic can Image">
-                        <div class="prod-desc">
-                           <div class="description"></div>
-                        </div>
+                     
                         <h4>BILLY<br>CLASSIC<br>
                            <span>350ml - 3.48% ABV</span>
                         </h4>
                            
-                        <h5 class="learnMore" data-offset="0">Learn More</h5>
+                        <a href="#lb-desc" class="des-btn" data-member="classic">Learn More</a>
                      </div>
                      <div class="slider-card" id="slider-light">
                         <img src="images/light-can.PNG" alt="Light can Image">
@@ -201,7 +199,7 @@
                            <span>350ml - 1.28% ABV</span>
                         </h4>
                            
-                        <h5 href="#">Learn More</h5>
+                        <a href="#lb-desc" class="des-btn" data-beer="light">Learn More</a>
                            
                      </div>
                      <div class="slider-card" id="slider-zero">
@@ -210,12 +208,27 @@
                            <span>350ml - 0 CAL</span>
                         </h4>
                            
-                        <h5 href="#">Learn More</h5>
+                        <a href="#lb-desc" class="des-btn" data-beer="zero">Learn More</a>
                            
                      </div>
                   </div>
                </div>
             </div>
+
+            <section class="lb-des lightbox" id="lb-desc">
+               <!-- close button -->
+               <a href="" class="lightbox_close">x</a>
+         
+               <article>
+                   <h3 class="lb_heading">
+                     Billy Classic
+                   </h3>
+         
+                   <p class="lb_text">
+                     This is the beer that started it all - a timeless classic that never goes out of style. With its rich, malty flavor and satisfying hoppy finish, this brew is sure to please even the most discerning beer aficionado. Whether you are enjoying it with friends at a BBQ or sipping it by the fire on a chilly evening, this beer is the perfect companion for any occasion.
+                  </p>
+               </article>
+           </section>
       </section>
 
       <section class="grid-con" id="promo">
@@ -339,5 +352,6 @@
    
    <script src="js/main.js"></script>
    <script src="js/product.js"></script>
+
 </body>
 </html>
