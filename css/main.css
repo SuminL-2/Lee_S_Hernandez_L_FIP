@@ -474,12 +474,12 @@ height: 12.5rem;
    margin: 3vw;
 }
 
-.slider-card h5 {
+.slider-card a {
    background-color: #F7B92E;
    text-decoration: none;
 }
 
-.slider-card h5:hover {
+.slider-card a:hover {
    box-shadow: inset  0 -3rem 0 #fff;
    color: #110F3D;
    transition: all .5s ease;
@@ -522,20 +522,24 @@ height: 12.5rem;
    transition: all .5s ease-in-out;
 }
 
-.mb-slider h5 {
-   width: 30vw;
+.mb-slider a {
+   width: 10vw;
    display: block;
    padding: 0.1em 1em;
    color: white;
    margin: 3vh auto ;
    border-radius: 1.25rem;
-   font-size: 4vw;
+   font-size: 3vw;
    text-align: center;
    cursor: pointer;
 }
 
-.slider h5:active {
+.slider a:active {
    filter: brightness(50%);
+}
+
+.lb-des {
+   display: none;
 }
 
 .prod-desc {
@@ -1068,7 +1072,7 @@ footer {
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
- 
+
 
 
 /* 12. ---Tablet Queries--- */
@@ -1504,7 +1508,7 @@ nav.fill ul li a:hover:after {
    .arrow {display: none;}
 
 
-   .mb-slider h5 {
+   .mb-slider a {
       width: 13vw;
       display: block;
       padding: 0.2rem;
