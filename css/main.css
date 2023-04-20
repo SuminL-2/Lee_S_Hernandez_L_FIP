@@ -149,7 +149,6 @@ header {
 #main-logo:hover {
    transform: scale(1.1);
    transition: all 0.3s ease-in-out;
-   opacity: 85%;
 }
 
 
@@ -523,9 +522,9 @@ height: 12.5rem;
 }
 
 .mb-slider a {
-   width: 10vw;
+   width: 20vw;
    display: block;
-   padding: 0.1em 1em;
+   padding: 0.3rem 1em;
    color: white;
    margin: 3vh auto ;
    border-radius: 1.25rem;
@@ -1095,13 +1094,13 @@ footer {
 
 
    #hero-img1 {
-      width: 48rem;
+      /* width: 48rem; */
       height: 54rem;
    }
 
 
    #hero-img2 {
-      width: 48rem;
+      /* width: 48rem; */
       height: 54rem;
    }
 
@@ -1145,6 +1144,10 @@ footer {
 
    /* product slider */
 
+   #product-text {
+      margin-bottom: 3rem;
+   }
+
    .slider-card {
       width: 50vw; 
    }
@@ -1158,12 +1161,20 @@ footer {
       font-size: 3vw;
    }
 
+   .arrow {
+      top: 66vh;
+   }
+
 
 
    
    #promo {
          margin-top: 4.375rem;
    } 
+
+   #promo-text {
+      font-size: 2.8rem;
+   }
    
    .promo-n {
          display: inline-block;
@@ -1430,7 +1441,7 @@ nav.fill ul li a:hover:after {
          height: 42.1875rem;
          margin: 0;
          margin-right: -0.9375rem;
-         overflow: hidden;
+         /* overflow: hidden; */
          object-fit: cover;
          grid-column: 1/6;
    }
@@ -1519,7 +1530,10 @@ nav.fill ul li a:hover:after {
       text-align: center;
    }
 
-   
+   #promo-text {
+      margin-top: 8rem;
+   }
+
    .promo-n {
          margin-top: 9.375rem;
 
@@ -1527,7 +1541,8 @@ nav.fill ul li a:hover:after {
    }
 
    #promo-text2 {
-      padding-left: 0;
+      padding: 0;
+      margin-top: 2rem;
    }
 
    
@@ -1703,6 +1718,10 @@ nav.fill ul li a:hover:after {
       padding: 0 auto;
       margin-left: 1rem;
       margin-right: 0;
+   }
+
+   .slider-card img {
+      padding: 2rem;
    }
    
    #promo-number {
